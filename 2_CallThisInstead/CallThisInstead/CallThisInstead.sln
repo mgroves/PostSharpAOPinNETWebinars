@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallThisInstead", "CallThisInstead\CallThisInstead.csproj", "{BAC16CEB-F83C-42FB-B5D5-45F362475508}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5DF99588-A511-4C59-92FD-76F6FAC143D0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallThisInstead.Intro", "CallThisInstead.Intro\CallThisInstead.Intro.csproj", "{94DC01F8-2843-4606-998C-03397085FD98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAC16CEB-F83C-42FB-B5D5-45F362475508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC16CEB-F83C-42FB-B5D5-45F362475508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC16CEB-F83C-42FB-B5D5-45F362475508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC16CEB-F83C-42FB-B5D5-45F362475508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DC01F8-2843-4606-998C-03397085FD98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DC01F8-2843-4606-998C-03397085FD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DC01F8-2843-4606-998C-03397085FD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DC01F8-2843-4606-998C-03397085FD98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

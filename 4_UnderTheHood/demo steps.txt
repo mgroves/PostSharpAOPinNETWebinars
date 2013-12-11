@@ -1,0 +1,46 @@
+These are the steps I take for the code demo:
+
+- Start with the PostSharp Express, which is a free license
+- Later, I'll show you how the Aspect Optimizer works in the PostSharp Professional license
+
+[start with PostSharp Express]
+
+- Here's a class called MyClass with a DoSomething method
+- We're going to add an aspect to it
+- but let's look at it in a decompiler *before* we do that
+- show in Reflector
+
+- MyAspect is a method boundary aspect
+- I'm overriding all four boundaries
+- I'm applying MyAspect to the DoSomething method
+- Compile, view in reflector with PostSharp plugin
+
+- here is the decompiled DoSomething method
+- it looks a little complex, but don't panic
+- we'll break it down and see that it's not so complex
+
+- now I'll change the aspect to only have OnEntry implemented
+- compile, decompile, and we see the exact same code
+- even though we don't need to have a try-catch-finally block anymore, it's still there
+
+- one step further, let's refactor this aspect
+- so that we get the method name at Compile Time, and store it in a field
+- now args isn't being used at all
+- but again, if we compile and look at the enhanced method
+	it's still creating the args object
+- so the enhanced code is a bit "greedy"
+- it's doing everything just in case
+
+[switch to PostSharp Ultimate / PostSharp Professional]
+
+- give me a quick second as I change licenses
+- the Aspect Optimizer feature enhances the code more intelligently
+- show that the 'args' object is no longer created
+- and the FlowControl code is no longer generated
+
+- the main thing to take away from this webinar
+- is more detail about how PostSharp works
+- sometimes IL manipulation can feel like black magic
+- and you may be uncomfortable using something that changes your assembly
+- but if you open up a decompiler, you can see exactly what changes are made
+- and start to get more comfortable with using aspects
